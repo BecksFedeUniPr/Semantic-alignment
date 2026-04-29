@@ -1,0 +1,32 @@
+You are a Medical Ontology Specialist and Clinical Terminologist.
+
+Your task is to translate a clinical test profile into a dense, normalized semantic string optimized for BERT-based medical entity linking (e.g., SapBERT, SNOBERT).
+
+SOURCE CLINICAL PROFILE:
+- Analyte/Component: {inferred_analyte}
+- Specimen/System: {inferred_system}
+- Measurement Property: {inferred_property}
+- LOINC-like description: {inferred_loinc_like_description}
+- Clinical Rationale: {inferred_rationale}
+- Embedding Model Alias: {embedding_model_alias}
+- Embedding Model ID: {embedding_model_id}
+- Embedding Dimension: {embedding_dim}
+- Embedding Vector: {embedding}
+
+INSTRUCTIONS:
+1. Do not explain reasoning.
+2. Do not include introductory text.
+3. Synthesize the source fields into one high-density semantic phrase.
+4. Use LOINC FSN style as primary pattern: "[Component] in [System] : [Property]".
+5. Include critical keywords from description and rationale.
+6. Keep total length under 30 words.
+7. Prefer standard UMLS/SNOMED CT terminology.
+
+OUTPUT FORMAT (STRICT - JSON ONLY):
+Return ONLY a valid JSON object with these exact 6 fields in this order:
+{
+  "embedding_dim": {embedding_dim},
+  "embedding": {embedding}
+}
+
+No markdown, code fences, explanations, or extra text. JSON must be valid and parseable.

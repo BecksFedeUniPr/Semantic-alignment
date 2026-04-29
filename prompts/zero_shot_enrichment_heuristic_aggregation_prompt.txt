@@ -1,0 +1,14 @@
+You are an expert clinical pathologist. We have extracted a distinct statistical cluster of patient laboratory measurements for an unknown, anonymous lab test. 
+
+Your task is to deduce the most likely clinical analyte based entirely on this real-world distribution profile:
+- Cluster Centroid (Mean): [INSERISCI CLUSTER MEAN]
+- Standard Deviation: [INSERISCI CLUSTER STD]
+- Effective Value Range (Min-Max): [INSERISCI CLUSTER MIN] to [INSERISCI CLUSTER MAX]
+- Associated Unit of Measure: [INSERISCI CLUSTER UOM]
+
+Consider which common basal or specific lab test perfectly matches this statistical spread in a human population.
+
+CRITICAL INSTRUCTION: Your output will be passed directly into an embedding model (e.g., SAPBERT/ADAv2) to perform semantic vector matching against the LOINC database. 
+- DO NOT use any conversational filler, pleasantries, or introductory phrases.
+- Return EXACTLY and ONLY a dense, clean clinical string.
+- STRICTLY follow this output format: "[Main Analyte Name and common synonyms] | [Specimen/Body System] | [Measurement type: quantitative or qualitative]".

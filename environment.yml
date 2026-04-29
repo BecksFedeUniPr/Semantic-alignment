@@ -1,0 +1,16 @@
+name: semantic-align
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - pydantic>=2
+  - mlflow>=2.14
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - pip:
+      - ollama>=0.3.0
+      - sentence-transformers>=3.0.0
+      - torch>=2.2.0

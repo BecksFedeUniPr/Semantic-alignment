@@ -1,0 +1,95 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Output and results
+results/
+outputs/
+*.log
+pipeline.log
+
+# MLflow
+mlruns/
+.mlflow/
+mlflow*
+
+# Data files
+datasets/*
+ground_truth.csv
+
+# Embeddings and large models
+*.embeddings
+*.embeddings.npy
+*.model
+*.pt
+
+cui2vec/*
+mlartifacts/*
+
+# Cache
+.cache/
+*.cache
+__pycache__/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Ollama
+ollama_models/
+~/.ollama/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+.gitkeep
+
+# Project specific
+config.local.yaml
+secrets.yaml
+*.local
+
+loinc_snomed_embeddings/*
